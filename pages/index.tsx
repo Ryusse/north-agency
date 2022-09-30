@@ -6,8 +6,13 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { Button } from '@/elements/atoms';
+import { Button, SubTitle } from '@/elements/atoms';
 import { Header, Hero, MainLayout } from '@/elements/organisms';
+
+import Image from 'next/image';
+
+import ImageSection2 from '/public/images/jpg/home-section-2.jpg';
+import ImageSection3 from '/public/images/png/home-section-3.png';
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -70,6 +75,171 @@ const Home: NextPage = () => {
           <Input label="Apellido" size="medium" />
           <Button buttonName="secondary" />
         </Box> */}
+
+          <Box component="section">
+            <Box marginTop="10.625rem" marginBottom="4.875rem">
+              <SubTitle
+                align="center"
+                textParagraph="Planes destacados"
+                textTitle="Conoce nuestros planes destacados"
+              />
+            </Box>
+          </Box>
+
+          <Box
+            component="section"
+            display="flex"
+            flexDirection={{ xs: 'column', lg: 'row' }}
+            justifyContent="space-between"
+            gap="5rem"
+            marginY="10.625rem"
+          >
+            <Box maxWidth="36rem">
+              <SubTitle
+                align="left"
+                textParagraph="Punto de viaje"
+                textTitle="Te ayudamos a encontrar 
+                el lugar de tus sueños"
+              />
+
+              <Typography marginTop="1.5rem">
+                How travel can be one of the best tools for personal growth. We
+                share some of the life lessons we’ve learned on the road that
+                has provided us insight into empathy, mindfulness, meditation,
+                comfort zones, two-way storytesting, being present, connection
+                and more.
+              </Typography>
+
+              <Box
+                marginTop="4.125rem"
+                display="flex"
+                // flexDirection={{ xs: 'column', sm: 'row' }}
+                justifyContent="start"
+                gap={{ xs: '1rem', md: '5rem' }}
+              >
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    100+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Planes de viaje
+                  </Typography>
+                </Box>
+
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    20+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Convenios
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Box
+                marginTop="4rem"
+                display="flex"
+                // flexDirection={{ xs: 'column', sm: 'row' }}
+                justifyContent="start"
+                gap={{ xs: '1rem', md: '5rem' }}
+              >
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    50+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Transportes
+                  </Typography>
+                </Box>
+
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    1000+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Clientes satisfechos
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+
+            <Box
+              component="figure"
+              margin="0"
+              position="relative"
+              borderRadius="3.125rem 0 3.125rem 0"
+              display="grid"
+              boxShadow="5px 24px 53px rgba(0, 0, 0, 0.25)"
+            >
+              <Image
+                src={ImageSection2}
+                className={classes.styledGenericImage}
+                style={{
+                  borderRadius: '3.125rem 0 3.125rem 0',
+                  //boxShadow: '5px 24px 53px rgba(0, 0, 0, 0.25)',
+                }}
+                alt="image about north"
+              />
+            </Box>
+          </Box>
+
+          <Box component="section" marginY="10.625rem">
+            <SubTitle
+              align="center"
+              textParagraph="Testimonios"
+              textTitle="Lo que dicen nuestros clientes"
+            />
+
+            <Box>
+              <Box component="figure" margin="0" position="relative">
+                <Image
+                  src={ImageSection3}
+                  className={classes.styledGenericImage}
+                  style={{
+                    borderRadius: '3.125rem 0 3.125rem 0',
+                    //boxShadow: '5px 24px 53px rgba(0, 0, 0, 0.25)',
+                  }}
+                  alt="image about north"
+                />
+              </Box>
+            </Box>
+          </Box>
         </MainLayout>
       </main>
     </>

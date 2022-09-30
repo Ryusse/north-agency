@@ -4,6 +4,7 @@ import { Box } from '@mui/material';
 
 interface Props {
   children: ReactNode;
+  component?: string;
 }
 
 export const MainLayout = ({ children }: Props) => {

@@ -1,6 +1,12 @@
 import { createTheme } from '@mui/material/styles';
 
-import { northH1, northH2 } from './typography';
+import {
+  northH1,
+  northH2,
+  northBody1,
+  northBody2,
+  northSubtitle1,
+} from './typography';
 import { northFontFamily } from './utils';
 
 let NorthTheme = createTheme();
@@ -30,6 +36,9 @@ NorthTheme = createTheme({
     fontFamily: northFontFamily,
     h1: northH1,
     h2: northH2,
+    body1: northBody1,
+    body2: northBody2,
+    subtitle1: northSubtitle1,
   },
 
   breakpoints: {

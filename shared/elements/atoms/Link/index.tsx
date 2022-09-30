@@ -17,7 +17,6 @@ interface Props {
 }
 
 export const Link = ({ type, href, children, active, ...props }: Props) => {
-  console.log(active);
   const { classes } = linkStyles({ active, type });
 
   if (type === 'link' || !type)

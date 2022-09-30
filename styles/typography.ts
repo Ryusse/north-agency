@@ -18,9 +18,39 @@ export const northH1 = (theme.typography.h1 = {
 });
 
 export const northH2 = (theme.typography.h2 = {
-  fontSize: '1.5rem',
+  fontSize: '1.6rem',
+  fontWeight: 700,
+  lineHeight: '2.8125rem',
 
-  [theme.breakpoints.up('lg')]: {
-    fontSize: '2.5rem',
+  [theme.breakpoints.up('md')]: {
+    fontSize: '2rem',
+  },
+});
+
+export const northSubtitle1 = (theme.typography.subtitle1 = {
+  fontSize: '1.2rem',
+  fontWeight: 500,
+  lineHeight: '1.75rem',
+
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1.5rem',
+  },
+});
+
+export const northBody1 = (theme.typography.body1 = {
+  fontSize: '0.875rem',
+  fontWeight: 500,
+  lineHeight: '1.75rem',
+
+  [theme.breakpoints.up('md')]: {
+    fontSize: '1rem',
+  },
+});
+
+export const northBody2 = (theme.typography.body2 = {
+  fontSize: '0.75rem',
+
+  [theme.breakpoints.up('md')]: {
+    fontSize: '0.875rem',
   },
 });

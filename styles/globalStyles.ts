@@ -9,4 +9,12 @@ export const globalStyles = makeStyles()((theme) => ({
       display: 'block',
     },
   },
+
+  styledGenericImage: {
+    '& img': {
+      objectFit: 'cover',
+      widt: '100%',
+      height: '100%',
+    },
+  },
 }));
