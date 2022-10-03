@@ -10,14 +10,21 @@ export const subtitleStyles = makeStyles<Props>()((theme, { align }) => ({
   styledParagraph: {
     // fontSize: 'theme.typography.body2',
     color: theme.palette.primary.main,
-    textAlign: align === 'center' ? 'center' : 'left',
+    textAlign: 'start',
     fontWeight: 'bold',
+
+    [theme.breakpoints.up('lg')]: {
+      textAlign: align === 'center' ? 'center' : 'left',
+    },
   },
 
   styledTitle: {
-    // fontSize: 'theme.typography.h2',
     color: theme.palette.grey[900],
-    textAlign: align === 'center' ? 'center' : 'left',
+    textAlign: 'start',
     fontWeight: 'bold',
+
+    [theme.breakpoints.up('lg')]: {
+      textAlign: align === 'center' ? 'center' : 'left',
+    },
   },
 }));

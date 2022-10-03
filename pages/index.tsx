@@ -31,7 +31,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
       <main>
         <Hero>
           <Typography
@@ -94,7 +93,7 @@ const Home: NextPage = () => {
             gap="5rem"
             marginY="10.625rem"
           >
-            <Box maxWidth="36rem">
+            <Box maxWidth={{ lg: '36rem' }}>
               <SubTitle
                 align="left"
                 textParagraph="Punto de viaje"

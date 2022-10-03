@@ -14,7 +14,7 @@ export const MainLayout = ({ children }: Props) => {
       maxWidth={1312}
       width={{
         xs: '100%',
-        md: 'calc(100% - 3rem)',
+        md: 'calc(100% - 5rem)',
         lg: 'calc(100% - 100px)',
       }}
       marginX="auto"

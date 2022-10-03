@@ -1,8 +1,9 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
 import { Hero } from './../../shared/elements/organisms/Hero/index';
+import { SubTitle } from '@/elements/atoms';
 import { MainLayout } from '@/elements/organisms';
 
 const Plans: NextPage = () => {
@@ -33,6 +34,234 @@ const Plans: NextPage = () => {
           <div>
             <h1>Body</h1>
           </div>
+
+          <Box
+            component="section"
+            display="flex"
+            flexDirection={{ xs: 'column', lg: 'row' }}
+            justifyContent="space-between"
+            gap="5rem"
+            marginY="10.625rem"
+          >
+            <Box maxWidth={{ lg: '36rem' }}>
+              <SubTitle
+                align="left"
+                textParagraph="Punto de viaje"
+                textTitle="Te ayudamos a encontrar 
+                el lugar de tus sueños"
+              />
+
+              <Typography marginTop="1.5rem">
+                How travel can be one of the best tools for personal growth. We
+                share some of the life lessons we’ve learned on the road that
+                has provided us insight into empathy, mindfulness, meditation,
+                comfort zones, two-way storytesting, being present, connection
+                and more.
+              </Typography>
+
+              <Box
+                marginTop="4.125rem"
+                display="flex"
+                // flexDirection={{ xs: 'column', sm: 'row' }}
+                justifyContent="start"
+                gap={{ xs: '1rem', md: '5rem' }}
+              >
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    100+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Planes de viaje
+                  </Typography>
+                </Box>
+
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    20+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Convenios
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Box
+                marginTop="4rem"
+                display="flex"
+                // flexDirection={{ xs: 'column', sm: 'row' }}
+                justifyContent="start"
+                gap={{ xs: '1rem', md: '5rem' }}
+              >
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    50+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Transportes
+                  </Typography>
+                </Box>
+
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    1000+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Clientes satisfechos
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
+
+          <Box
+            component="section"
+            display="flex"
+            flexDirection={{ xs: 'column', lg: 'row' }}
+            justifyContent="space-between"
+            gap="5rem"
+            marginY="10.625rem"
+          >
+            <Box maxWidth={{ lg: '36rem' }}>
+              <SubTitle
+                align="left"
+                textParagraph="Punto de viaje"
+                textTitle="Te ayudamos a encontrar 
+                el lugar de tus sueños"
+              />
+
+              <Typography marginTop="1.5rem">
+                How travel can be one of the best tools for personal growth. We
+                share some of the life lessons we’ve learned on the road that
+                has provided us insight into empathy, mindfulness, meditation,
+                comfort zones, two-way storytesting, being present, connection
+                and more.
+              </Typography>
+
+              <Box
+                marginTop="4.125rem"
+                display="flex"
+                // flexDirection={{ xs: 'column', sm: 'row' }}
+                justifyContent="start"
+                gap={{ xs: '1rem', md: '5rem' }}
+              >
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    100+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Planes de viaje
+                  </Typography>
+                </Box>
+
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    20+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Convenios
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Box
+                marginTop="4rem"
+                display="flex"
+                // flexDirection={{ xs: 'column', sm: 'row' }}
+                justifyContent="start"
+                gap={{ xs: '1rem', md: '5rem' }}
+              >
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    50+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Transportes
+                  </Typography>
+                </Box>
+
+                <Box width={{ xs: '100%', sm: '11rem' }}>
+                  <Typography
+                    variant="subtitle1"
+                    marginTop=""
+                    color="primary.main"
+                    fontWeight={700}
+                  >
+                    1000+
+                  </Typography>
+                  <Typography
+                    marginTop="0.625rem"
+                    color="primary.grey.900"
+                    fontWeight={600}
+                  >
+                    Clientes satisfechos
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
         </MainLayout>
       </main>
     </>

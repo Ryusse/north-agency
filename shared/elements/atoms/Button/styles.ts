@@ -8,7 +8,7 @@ export const buttonStyles = makeStyles<{
     paddingInline: 32,
     paddingBlock: 14,
     borderRadius: '6px',
-    fontSize: '1rem',
+    fontSize: '0.875rem',
     textAlign: 'center',
     color: theme.palette.common.white,
     //fontWeight: 600,
@@ -40,6 +40,6 @@ export const buttonStyles = makeStyles<{
   },
 
   styledText: {
-    fontWeight: 600,
+    fontWeight: 500,
   },
 }));

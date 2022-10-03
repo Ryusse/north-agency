@@ -14,10 +14,18 @@ interface Props {
   children: ReactNode;
   active?: boolean;
   type: Type;
+  onScroll?: boolean;
 }
 
-export const Link = ({ type, href, children, active, ...props }: Props) => {
-  const { classes } = linkStyles({ active, type });
+export const Link = ({
+  type,
+  href,
+  children,
+  active,
+  onScroll,
+  ...props
+}: Props) => {
+  const { classes } = linkStyles({ active, type, onScroll });
 
   if (type === 'link' || !type)
     return (

@@ -1,49 +1,43 @@
+import { alpha } from '@mui/material';
 import { makeStyles } from 'tss-react/mui';
 
-export const headerStyles = makeStyles()((theme) => ({
-  styledHeader: {
-    width: '100%',
-    position: 'fixed',
-    left: 0,
-    paddingBlock: 52,
-    zIndex: 100,
-  },
+export const headerStyles = makeStyles<{ onScroll: boolean }>()(
+  (theme, { onScroll }) => ({
+    styledHeader: {
+      width: '100%',
+      position: 'fixed',
+      left: 0,
+      paddingBlock: 22,
+      zIndex: 10,
+      backdropFilter: onScroll && 'blur(10px)',
+      boxShadow: 'none',
+      backgroundColor: onScroll
+        ? alpha(theme.palette.common.white, 0.9)
+        : 'transparent',
 
-  styledContainer: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-
-  styledLogo: {
-    cursor: 'pointer',
-  },
-
-  styledNav: {
-    display: 'none',
-    position: 'relative',
-
-    [theme.breakpoints.up('lg')]: {
-      display: 'flex',
+      borderBottom: `0.5px ${onScroll ? 'solid' : 'transparent'} ${
+        onScroll ? theme.palette.grey[200] : theme.palette.common.white
+      }`,
     },
-  },
 
-  styledButtonContainer: {
-    display: 'none',
+    styledLogo: {
+      cursor: 'pointer',
+      display: 'grid',
+      placeContent: 'center',
 
-    [theme.breakpoints.up('lg')]: {
-      display: 'flex',
+      '& path': {
+        fill: onScroll
+          ? theme.palette.text.primary
+          : theme.palette.common.white,
+      },
     },
-  },
 
-  styledMarker: {
-    // position: 'absolute',
-    // height: '4px',
-    // width: 'calc(100% / 3)',
-    // background: theme.palette.common.white,
-    // bottom: '8px',
-    // left: 0,
-    // transition: '0.5s',
-    // borderRadius: '4px',
-  },
-}));
+    styledLink: {
+      color: onScroll ? theme.palette.text.primary : theme.palette.common.white,
+    },
+
+    styledMenu: {
+      color: onScroll ? theme.palette.text.primary : theme.palette.common.white,
+    },
+  })
+);
