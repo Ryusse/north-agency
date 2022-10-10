@@ -1,18 +1,20 @@
 import React from 'react';
 
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Stack } from '@mui/material';
 import { globalStyles } from '@styles/globalStyles';
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 import { Button, SubTitle } from '@/elements/atoms';
-import { Header, Hero, MainLayout } from '@/elements/organisms';
+import { Feedback } from '@/elements/molecules';
+import { Hero, ListPlans, MainLayout } from '@/elements/organisms';
 
-import Image from 'next/image';
-
+import HeroBackground from '/public/images/jpg/home-background.jpg';
 import ImageSection2 from '/public/images/jpg/home-section-2.jpg';
 import ImageSection3 from '/public/images/png/home-section-3.png';
+import ImageSection4 from '/public/images/jpg/home-section-4.jpg';
 
 const Home: NextPage = () => {
   const router = useRouter();
@@ -21,6 +23,10 @@ const Home: NextPage = () => {
 
   const handleRedirectToPlans = () => {
     router.replace('/plans');
+  };
+
+  const handleRedirectToAsesor = () => {
+    router.replace('/asesor');
   };
 
   return (
@@ -32,7 +38,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <Hero>
+        <Hero backgroundImage={HeroBackground.src}>
           <Typography
             variant="h1"
             textAlign={{
@@ -59,22 +65,6 @@ const Home: NextPage = () => {
         </Hero>
 
         <MainLayout>
-          {/* <Box
-          component="form"
-          sx={{
-            paddingY: '2rem',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '1.8rem',
-          }}
-          noValidate
-          autoComplete="off"
-        >
-          <Input label="Nombre" size="medium" />
-          <Input label="Apellido" size="medium" />
-          <Button buttonName="secondary" />
-        </Box> */}
-
           <Box component="section">
             <Box marginTop="10.625rem" marginBottom="4.875rem">
               <SubTitle
@@ -83,6 +73,8 @@ const Home: NextPage = () => {
                 textTitle="Conoce nuestros planes destacados"
               />
             </Box>
+
+            <ListPlans />
           </Box>
 
           <Box
@@ -112,7 +104,6 @@ const Home: NextPage = () => {
               <Box
                 marginTop="4.125rem"
                 display="flex"
-                // flexDirection={{ xs: 'column', sm: 'row' }}
                 justifyContent="start"
                 gap={{ xs: '1rem', md: '5rem' }}
               >
@@ -156,7 +147,6 @@ const Home: NextPage = () => {
               <Box
                 marginTop="4rem"
                 display="flex"
-                // flexDirection={{ xs: 'column', sm: 'row' }}
                 justifyContent="start"
                 gap={{ xs: '1rem', md: '5rem' }}
               >
@@ -211,7 +201,6 @@ const Home: NextPage = () => {
                 className={classes.styledGenericImage}
                 style={{
                   borderRadius: '3.125rem 0 3.125rem 0',
-                  //boxShadow: '5px 24px 53px rgba(0, 0, 0, 0.25)',
                 }}
                 alt="image about north"
               />
@@ -219,23 +208,73 @@ const Home: NextPage = () => {
           </Box>
 
           <Box component="section" marginY="10.625rem">
-            <SubTitle
-              align="center"
-              textParagraph="Testimonios"
-              textTitle="Lo que dicen nuestros clientes"
-            />
+            <Box marginBottom="4.875rem">
+              {' '}
+              <SubTitle
+                align="center"
+                textParagraph="Testimonios"
+                textTitle="Lo que dicen nuestros clientes"
+              />
+            </Box>
 
-            <Box>
+            <Stack
+              direction={{ xs: 'column', lg: 'row' }}
+              justifyContent="space-between"
+              alignItems="center"
+              spacing="5rem"
+            >
               <Box component="figure" margin="0" position="relative">
-                <Image
-                  src={ImageSection3}
-                  className={classes.styledGenericImage}
-                  style={{
-                    borderRadius: '3.125rem 0 3.125rem 0',
-                    //boxShadow: '5px 24px 53px rgba(0, 0, 0, 0.25)',
-                  }}
-                  alt="image about north"
-                />
+                <Image src={ImageSection3} alt="feedback image" />
+              </Box>
+
+              <Stack spacing="2.5rem" width={{ lg: '719.45px' }}>
+                <Box>
+                  <Feedback position="right" />
+                </Box>
+                <Box>
+                  <Feedback backgroundColor="red" position="left" />
+                </Box>
+                <Box>
+                  <Feedback position="right" />
+                </Box>
+              </Stack>
+            </Stack>
+          </Box>
+
+          <Box component="section" marginY="10.625rem" position="relative">
+            <Box component="figure" margin="0" display="grid">
+              <Image src={ImageSection4} alt="feedback image" />
+            </Box>
+
+            <Box
+              position="absolute"
+              top="50%"
+              left="50%"
+              style={{
+                transform: 'translate(-50%,-50%)',
+              }}
+            >
+              <Typography
+                variant="subtitle1"
+                marginBottom="2.5rem"
+                color="#fff"
+                fontWeight={600}
+              >
+                ¿Quieres convertirete en asesor de venta?
+              </Typography>
+              <Box
+                component="a"
+                marginX="auto"
+                display="grid"
+                onClick={handleRedirectToAsesor}
+              >
+                <Button
+                  buttonName="terciary"
+                  width="contained"
+                  position="center"
+                >
+                  Postula ahora
+                </Button>
               </Box>
             </Box>
           </Box>

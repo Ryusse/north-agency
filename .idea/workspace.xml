@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="326a9d79-5cb7-4d8a-a1e0-9eb1096e3879" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/asesor/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jpg/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jpg/mision.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jpg/plan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jpg/plans-background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jpg/vision.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/elements/molecules/AsesorForm/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/elements/molecules/Menu/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/elements/molecules/Menu/styles.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shared/elements/molecules/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codestream.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codestream.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/test-mui.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/folder-alias.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/plans/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/plans/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/atoms/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/atoms/Button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/atoms/Button/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/atoms/Button/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/atoms/Input/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/atoms/Input/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/atoms/Link/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/atoms/Link/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/atoms/icon/LogoDark.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/atoms/icon/LogoDark.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/organisms/Header/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/organisms/Header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/organisms/Hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/organisms/Hero/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/organisms/Hero/styles.ts" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/organisms/Hero/styles.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/elements/organisms/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/shared/elements/organisms/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/theme.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/typography.ts" beforeDir="false" afterPath="$PROJECT_DIR$/styles/typography.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FvFtrdCeFFRYaaso6D8UyMvr80" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;D:\\Proyectos\\Github\\Portfolio\\north\\north-frontend\\node_modules\\stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Proyectos\\Github\\Portfolio\\north\\north-frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proyectos\Github\Portfolio\north\north-frontend\public\images\jpg" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="326a9d79-5cb7-4d8a-a1e0-9eb1096e3879" name="Changes" comment="" />
+      <created>1665364871111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665364871111</updated>
+      <workItem from="1665364875030" duration="5734000" />
+      <workItem from="1665371857171" duration="2324000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

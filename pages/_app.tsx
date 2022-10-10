@@ -5,7 +5,7 @@ import type { AppProps } from 'next/app';
 
 import NorthTheme from '../styles/theme';
 import createEmotionCache from '../utility/createEmotionCache';
-import { Header } from '@/elements/organisms';
+import { Footer, Header } from '@/elements/organisms';
 
 const clientSideEmotionCache = createEmotionCache();
 
@@ -21,6 +21,7 @@ const MyApp = (props: MyAppProps) => {
         <CssBaseline />
         <Header />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </CacheProvider>
   );

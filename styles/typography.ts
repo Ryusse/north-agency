@@ -34,7 +34,7 @@ export const northSubtitle1 = (theme.typography.subtitle1 = {
   lineHeight: '1.75rem',
 
   [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
+    fontSize: '1.375rem',
   },
 });
 

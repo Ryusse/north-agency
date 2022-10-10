@@ -7,7 +7,7 @@ import NextLink from 'next/link';
 import { linkStyles } from './styles';
 import { Button } from '@/elements/atoms';
 
-export type Type = 'link' | 'button';
+export type Type = 'link' | 'linkMenu' | 'button';
 
 interface Props {
   href?: string;

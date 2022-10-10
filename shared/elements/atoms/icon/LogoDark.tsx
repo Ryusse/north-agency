@@ -2,13 +2,15 @@ export const LogoDark = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="149"
-      viewBox="0 0 169 50"
+      width="139"
+      viewBox="0 0 167 50"
       fill="none"
     >
       <g filter="url(#filter0_d_251_2485)">
-        <rect width="50" height="50" rx="15" x="10" fill="#DE3151" />
+        <rect width="50" height="50" rx="15" x="0" fill="#DE3151" />
         <rect
+          y="4"
+          x="-8"
           width="9.78888"
           height="22.4224"
           rx="4.89444"
@@ -17,6 +19,8 @@ export const LogoDark = () => {
           strokeWidth="1.94762"
         />
         <rect
+          y="4"
+          x="-8"
           width="9.78888"
           height="22.4224"
           rx="4.89444"

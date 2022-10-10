@@ -15,11 +15,12 @@ NorthTheme = createTheme({
   palette: {
     primary: {
       main: '#DE3151',
-      light: '#fff',
+      dark: '#C52441',
     },
 
     secondary: {
       main: '#353CEE',
+      dark: '#282ECA',
     },
 
     grey: {

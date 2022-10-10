@@ -5,21 +5,26 @@ import { Box } from '@mui/material';
 import { heroStyles } from './styles';
 import { MainLayout } from '@/elements/organisms';
 
+export type Height = 'full' | 'medium';
+export type Align = 'left' | 'center' | 'right';
 interface Props {
   children: ReactNode;
+  backgroundImage: string;
+  height?: Height;
+  align?: Align;
 }
 
-export const Hero = ({ children }: Props) => {
-  const { classes } = heroStyles();
+export const Hero = ({
+  children,
+  backgroundImage,
+  height = 'full',
+  align = 'left',
+}: Props) => {
+  const { classes } = heroStyles({ backgroundImage, height, align });
   return (
     <Box className={classes.styledHero}>
       <MainLayout>
-        <Box
-          display="flex"
-          alignItems="center"
-          justifyContent={{ xs: 'center', lg: 'start' }}
-          height="100vh"
-        >
+        <Box className={classes.styledContent}>
           <Box> {children}</Box>
         </Box>
       </MainLayout>

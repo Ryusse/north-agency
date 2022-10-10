@@ -3,19 +3,42 @@ import { makeStyles } from 'tss-react/mui';
 export const buttonStyles = makeStyles<{
   buttonName: string;
   width: string;
-}>()((theme, { buttonName, width }) => ({
+  position: string;
+}>()((theme, { buttonName, width, position }) => ({
   styledButton: {
     paddingInline: 32,
     paddingBlock: 14,
     borderRadius: '6px',
     fontSize: '0.875rem',
     textAlign: 'center',
-    color: theme.palette.common.white,
-    //fontWeight: 600,
-    // backgroundColor: theme.palette.primary.main,
-    // (({ buttonName }) => buttonName && (
-    //   color: "red",
-    // )),
+    transition: 'all 0.2s ease-in-out',
+
+    justifySelf: (() => {
+      switch (position) {
+        case 'left':
+          return 'start';
+        case 'right':
+          return 'end';
+        case 'center':
+          return 'center';
+        default:
+          break;
+      }
+    })(),
+
+    color: (() => {
+      switch (buttonName) {
+        case 'primary':
+          return theme.palette.common.white;
+        case 'secondary':
+          return theme.palette.common.white;
+        case 'terciary':
+          return theme.palette.text.primary;
+        default:
+          break;
+      }
+    })(),
+
     width: (() => {
       switch (width) {
         case 'contained':
@@ -33,10 +56,25 @@ export const buttonStyles = makeStyles<{
           return theme.palette.primary.main;
         case 'secondary':
           return theme.palette.secondary.main;
+        case 'terciary':
+          return theme.palette.common.white;
         default:
           break;
       }
     })(),
+
+    '&: hover': {
+      backgroundColor: (() => {
+        switch (buttonName) {
+          case 'primary':
+            return theme.palette.primary.dark;
+          case 'secondary':
+            return theme.palette.secondary.dark;
+          default:
+            break;
+        }
+      })(),
+    },
   },
 
   styledText: {

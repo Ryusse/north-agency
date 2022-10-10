@@ -1,11 +1,23 @@
-import { Typography, Box } from '@mui/material';
+import React from 'react';
+
+import { Typography, Box, Stack } from '@mui/material';
+import { aboutStyles } from '@styles/pages/about';
 import { NextPage } from 'next';
+import Image from 'next/image';
 import Head from 'next/head';
 
 import { Hero } from './../../shared/elements/organisms/Hero/index';
+import { SubTitle } from '@/elements/atoms';
 import { MainLayout } from '@/elements/organisms';
 
+import HeroBackground from '/public/images/jpg/plans-background.jpg';
+import AboutImage from '/public/images/jpg/about.jpg';
+import PlanImage from '/public/images/jpg/plan.jpg';
+import MisionImage from '/public/images/jpg/mision.jpg';
+import VisionImage from '/public/images/jpg/vision.jpg';
+
 const About: NextPage = () => {
+  const { classes } = aboutStyles();
   return (
     <>
       <Head>
@@ -15,7 +27,11 @@ const About: NextPage = () => {
       </Head>
 
       <main>
-        <Hero>
+        <Hero
+          backgroundImage={HeroBackground.src}
+          height="medium"
+          align="center"
+        >
           <Typography
             variant="h1"
             textAlign={{
@@ -30,9 +46,117 @@ const About: NextPage = () => {
         </Hero>
 
         <MainLayout>
-          <div>
-            <h1>About</h1>
-          </div>
+          <Stack
+            component="section"
+            marginY="10.625rem"
+            direction={{ xs: 'column', lg: 'row' }}
+            justifyContent="space-between"
+            alignItems="center"
+            gap="3rem"
+          >
+            <Box maxWidth="35rem">
+              <SubTitle
+                align="left"
+                textParagraph="Sobre nosotros"
+                textTitle="Acerca de nosotros"
+              />
+              <Typography marginTop="1.5rem" variant="body1">
+                North nació en el 2007 cuando dos anfitriones recibieron en su
+                casa de Lima a tres huéspedes y desde entonces ha ido creciendo
+                hasta convertirse en una agencia de viajes top a nivel nacional.
+                Todos los días, los anfitriones ofrecen estadías y actividades
+                únicas que permiten a los huéspedes conectar con el resto del
+                mundo y explorarlo de una forma más auténtica.
+              </Typography>
+            </Box>
+            <Box
+              component="figure"
+              margin="0"
+              width={{ xs: '100%', lg: '40rem' }}
+              display="grid"
+            >
+              <Image src={AboutImage} />
+            </Box>
+          </Stack>
+
+          <Stack
+            component="section"
+            marginY="10.625rem"
+            direction={{ xs: 'column', lg: 'row' }}
+            justifyContent="space-between"
+            alignItems="center"
+            gap="3rem"
+          >
+            <Box
+              component="figure"
+              margin="0"
+              width={{ xs: '100%', lg: '40rem' }}
+              display="grid"
+            >
+              <Image src={PlanImage} />
+            </Box>
+
+            <Box maxWidth="35rem">
+              <SubTitle
+                align="left"
+                textParagraph="Conoce nuestro plan de empresa"
+                textTitle="Conoce nuestro plan de empresa"
+              />
+              <Typography marginTop="1.5rem" variant="body1">
+                La empresa North opera desde su única y principal sede en el
+                centro de Lima en la avenida 28 de Julio, la cual es una sede
+                renovada, segura y se encuentra en una posición privilegiada
+                debido a la concurrencia de gente que busca viajar a otras zonas
+                del país. Nos aseguramos de que los planes que vendemos estén
+                actualizados en cuanto a itinerarios, estadía y precios de la
+                zona para nuestros clientes tomen un descanso o conozcan otros
+                lugares con comodidad y a un precio accesible.
+              </Typography>
+            </Box>
+          </Stack>
+
+          <Stack
+            component="section"
+            marginY="10.625rem"
+            direction={{ xs: 'column', lg: 'row' }}
+            justifyContent="space-between"
+            alignItems="center"
+            gap="3rem"
+          >
+            <Box
+              position="relative"
+              component="figure"
+              margin="0"
+              width="100%"
+              display="grid"
+            >
+              <Image src={MisionImage} width={460} height={400} />
+              <Box className={classes.styledContent}>
+                <Typography variant="h2">Mision</Typography>
+                <Typography marginTop="1.5rem" variant="body1">
+                  North brinda servicios de planes de viaje ofreciendo variadas
+                  opciones al cliente para lograr satisfacer sus necesidades.
+                </Typography>
+              </Box>
+            </Box>
+            <Box
+              position="relative"
+              component="figure"
+              margin="0"
+              width="100%"
+              display="grid"
+            >
+              <Image src={VisionImage} width={460} height={400} />
+              <Box className={classes.styledContent}>
+                <Typography variant="h2">Vision</Typography>
+                <Typography marginTop="1.5rem" variant="body1">
+                  Ser reconocida como una de las mejores 30 empresas tour
+                  operadoras agencias de viaje, resaltando la calidad de nuestra
+                  responsabilidad social y ambiental en los próximos 5 años.
+                </Typography>
+              </Box>
+            </Box>
+          </Stack>
         </MainLayout>
       </main>
     </>
