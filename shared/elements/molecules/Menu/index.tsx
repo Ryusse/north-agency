@@ -19,6 +19,18 @@ export const Menu = ({ open, onClose }: Props) => {
     router.replace('/');
   };
 
+  const handleRedirectToAbout = () => {
+    router.replace('/about');
+  };
+
+  const handleRedirectToAsesor = () => {
+    router.replace('/asesor');
+  };
+
+  const handleRedirectToPlans = () => {
+    router.replace('/plans');
+  };
+
   return (
     <>
       <Modal open={open} onClose={onClose} closeAfterTransition>
@@ -31,13 +43,34 @@ export const Menu = ({ open, onClose }: Props) => {
             <LogoDark />
           </Box>
           <Stack direction="column" marginTop="1rem" spacing="">
-            <Box component="a" className={classes.styledLink}>
+            <Box
+              component="a"
+              className={classes.styledLink}
+              onClick={() => {
+                handleRedirectToPlans();
+                onClose();
+              }}
+            >
               <Typography variant="body2">Planes de viaje</Typography>
             </Box>
-            <Box component="a" className={classes.styledLink}>
+            <Box
+              component="a"
+              className={classes.styledLink}
+              onClick={() => {
+                handleRedirectToAbout();
+                onClose();
+              }}
+            >
               <Typography variant="body2">Sobre nosotros</Typography>
             </Box>
-            <Box component="a" className={classes.styledLink}>
+            <Box
+              component="a"
+              className={classes.styledLink}
+              onClick={() => {
+                handleRedirectToAsesor();
+                onClose();
+              }}
+            >
               <Typography variant="body2">Conviertete en asesor</Typography>
             </Box>
           </Stack>
