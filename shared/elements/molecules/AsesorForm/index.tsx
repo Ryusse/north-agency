@@ -1,7 +1,6 @@
 import { Box, Stack } from '@mui/material';
 import { Controller, useForm } from 'react-hook-form';
 
-import { type } from './../../atoms/Input/index';
 import { Button, Input } from '@/elements/atoms';
 
 type FormValues = {
