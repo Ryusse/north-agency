@@ -13,7 +13,7 @@ import { useScrollPosition } from '@/hooks';
 
 interface Props {
   window?: () => Window;
-  children: ReactElement;
+  children?: ReactElement;
 }
 
 const HideOnScroll = ({ window, children }: Props) => {
